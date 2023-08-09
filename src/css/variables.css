@@ -1,0 +1,15 @@
+:root {
+    --primary-1: hsl(0, 100%, 67%);
+    --primary-2: hsl(39, 100%, 56%);
+    --primary-3: hsl(166, 100%, 37%);
+    --primary-4: hsl(234, 85%, 45%);
+    --background-1: hsl(252, 100%, 67%);
+    --background-2: hsl(241, 81%, 54%);
+    --circle-1: hsla(256, 72%, 46%, 1);
+    --circle-2: hsla(241, 72%, 46%, 0);
+    --neutral-1: hsl(0, 0%, 100%);
+    --neutral-2: hsl(221, 100%, 96%);
+    --neutral-3: hsl(241, 100%, 89%);
+    --neutral-4: hsl(224, 30%, 27%);
+}
+

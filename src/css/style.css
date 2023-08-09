@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    max-width: 816px;
+    border-radius: 35px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px .1px var(--neutral-2);
+}
+
+.result {
+    background: var(--background-2);
+    background: linear-gradient(0deg, var(--background-2) 25%, var(--background-1) 100%);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 410px;
+    padding: 40px 60px;
+}
+
+.result h1 {
+    font-size: 30px;
+    color: var(--neutral-2);
+    margin-bottom: 35px;
+}
+
+.score {
+    background: var(--circle-1);
+    background: linear-gradient(0deg, var(--circle-2) 5%, var(--circle-1) 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 223px;
+    width: 223px;
+    color: var(--neutral-3);
+    margin-bottom: 30px;
+}
+
+.score-number {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--neutral-1);
+}
+
+.score-max {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.great {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--neutral-1);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--neutral-3);
+
+}
+
+.summary {
+    max-width: 410px;
+    padding: 43px 30px;
+}
+
+.summary h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 320px;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.visual {
+    margin-bottom: 50px;
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.text1 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-1);
+}
+
+.text2 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-2);
+}
+
+.text3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-3);
+}
+
+.text4 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-4);
+}
+
+.text1::before {
+    content: '';
+    background: url(../images/icon-reaction.svg) no-repeat center;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.text2::before {
+    content: '';
+    background: url(../images/icon-memory.svg) no-repeat center;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.text3::before {
+    content: '';
+    background: url(../images/icon-verbal.svg) no-repeat center;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.text4::before {
+    content: '';
+    background: url(../images/icon-visual.svg) no-repeat center;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.point {
+    opacity: 0.5;
+}
+
+.continue {
+    cursor: pointer;
+    background-color: var(--neutral-4);
+    height: 60px;
+    width: 320px;
+    border: 0;
+    border-radius: 50px;
+    color: var(--neutral-1);
+    font-size: 20px;
+}
+
+.continue:hover {
+    background: var(--background-1);
+    background: linear-gradient(0deg, var(--background-2) 40%, var(--background-1) 100%);
+}
+
+@media (max-width: 426px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .result {
+        padding: 30px;
+    }
+
+    .result h1 {
+        margin-top: 130px;
+        font-size: 22px;
+    }
+
+    .score {
+        height: 180px;
+        width: 180px;
+    }
+
+    .score-number {
+        font-size: 70px;
+    }
+
+    .great {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    .result h1 {
+        margin-top: 200px;
+    }
+}
